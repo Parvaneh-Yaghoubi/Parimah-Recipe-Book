@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<aside>
+    <!-- strat Navigation Bar -->
+            <nav class="topnav">
+                <a href="index.html">Home</a>
+                <a href="add-recipe.html">Add Recipe</a>
+                <a class="active" href="recipe-list.html" >Recipe List</a>
+                <div class="search-container" >
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </nav>
+            
+    <!-- End Navigation Bar -->
+</aside>
+<body>
+    <ul>
+        <h1>Parimah's Recipe List</h1>
+        <label for="menu-category"><b>Choose a Category</b></label><br>
+        <select name="category" id="menu-category" onchange="location = this.value;">
+            <option value="" disabled selected>Choose...</option>
+            <optgroup label="Main Dishes">
+                <option value="#bolani" id="bolani">Bolani</option>
+                <option value="#ashak">Ashak</option>
+                <option value="#ghabeli polo">Ghabeli Polo</option>
+            </optgroup>
+            <optgroup label="Desserts">
+                <option value="#sheer pira">Sheer Pira</option>
+                <option value="#sheer yakh">Sheer Yakh</option>
+                <option value="#gosh-e fil">Gosh-e Fil</option>
+            </optgroup>
+            <optgroup label="Drinks">
+                <option value="#dough">Dough</option>
+                <option value="#sharbat-e-rayhan">Sharbat-E-Rayhan</option>
+                <option value="#sharbat-e-bomya">Sharbat-E-Bomya</option>
+            </optgroup>
+            <optgroup label="Weekly Menu">
+                <option value="#weekly menu">Weekly Menu</option>
+        </select><br><br>
+        <li>
+            <h2 id="main dishes">Main Dishes</h2>
+                <ul>
+                    <li>
+                        <h3 id="bolani">Bolani</h3>
+                        <img src="images/bolani-2.jpg" alt="bolani image">
+                            <p>Bolani is a golden, pan-fried Afghan flatbread, folded around spiced vegetables or mashed potatoes. 
+                               A comforting street food with a satisfying crunch in every bite.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>80%</td>
+                            <td>50%</td>
+                            <td>40%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">☆</label>
+                            
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">☆</label>
+                        
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">☆</label>
+                        
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">☆</label>
+                        
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&nbsp;☆</label>
+                        </div>
+                    </form>
+                    <li>
+                        <h2 id="ashak">Ashak</h2>
+                        <img src="images/ashak.jpg" alt="ashak image" style="width: 230px; height: 250px;">
+                            <p>Ashak is an authentic Afghani recipe and this delicious recipe 
+                                is usually served on holidays or at special gatherings.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>0%</td>
+                            <td>50%</td>
+                            <td>60%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="ashak-1" name="ashak" value="5">
+                            <label for="ashak-1">☆</label>
+                            
+                            <input type="radio" id="ashak-2" name="ashak" value="4">
+                            <label for="ashak-2">☆</label>
+                        
+                            <input type="radio" id="ashak-3" name="ashak" value="3">
+                            <label for="ashak-3">☆</label>
+                        
+                            <input type="radio" id="ashak-4" name="ashak" value="2">
+                            <label for="ashak-4">☆</label>
+                        
+                            <input type="radio" id="ashak-5" name="ashak" value="1">
+                            <label for="ashak-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                    <li>
+                        <h2 id="ghabeli polo">Ghabeli Polo</h2>
+                        <img src="images/ghabeli.jpg" alt="ghabeli image" style="width: 230px; height: 250px;">
+                            <p>Ghabeli Polo is a traditional Afghan dish celebrated 
+                                for its unique combination of savory and sweet flavors.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>70%</td>
+                            <td>60%</td>
+                            <td>90%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="ghabeli polo-1" name="ghabeli polo" value="5">
+                            <label for="ghabeli polo-1">☆</label>
+                            
+                            <input type="radio" id="ghabeli polo-2" name="ghabeli polo" value="4">
+                            <label for="ghabeli polo-2">☆</label>
+                        
+                            <input type="radio" id="ghabeli polo-3" name="ghabeli polo" value="3">
+                            <label for="ghabeli polo-3">☆</label>
+                        
+                            <input type="radio" id="ghabeli polo-4" name="ghabeli polo" value="2">
+                            <label for="ghabeli polo-4">☆</label>
+                        
+                            <input type="radio" id="ghabeli polo-5" name="ghabeli polo" value="1">
+                            <label for="ghabeli polo-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                </ul>   
+        </li> 
+
+        <li>
+            <h2 id="desserts">Desserts</h2>
+                <ul>
+                    <li>
+                        <h3 id="sheer pira">Sheer Pira</h3>
+                        <img src="images/sheerpira.jpg" alt="sheer pira image" style="width: 240px; height: 270px;">
+                            <p>Sheer Pira, a delicious milk fudge that melts in your mouth, 
+                                has been a favorite in Afghanistan for centuries.
+                                This sweet and creamy treat is made by slowly cooking down condensed 
+                                milk, sugar, and ghee until it reaches the perfect texture. 
+                                The result is a rich caramel-colored fudge that is topped with chopped nuts and dried fruits 
+                                which add a bit of texture and crunch. With each bite, 
+                                the flavors explode in your mouth, leaving you feeling satisfied yet craving more.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>70%</td>
+                            <td>30%</td>
+                            <td>80%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="sheer pira-1" name="sheer pira" value="5">
+                            <label for="sheer pira-1">☆</label>
+                            
+                            <input type="radio" id="sheer pira-2" name="sheer pira" value="4">
+                            <label for="sheer pira-2">☆</label>
+                        
+                            <input type="radio" id="sheer pira-3" name="sheer pira" value="3">
+                            <label for="sheer pira-3">☆</label>
+                        
+                            <input type="radio" id="sheer pira-4" name="sheer pira" value="2">
+                            <label for="sheer pira-4">☆</label>
+                        
+                            <input type="radio" id="sheer pira-5" name="sheer pira" value="1">
+                            <label for="sheer pira-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                    <li>
+                        <h2 id="sheer yakh">Sheer Yakh</h2>
+                        <img src="images/sheeryakh.jpg" alt="sheeryakh image" style="width: 250px; height: 205px;">
+                            <p>Are you a fan of ice cream? Then allow me to introduce you to 
+                                a flavor that is sure to transport your taste buds to a whole new level 
+                                "Afghani Sheer Yakh". You've never tasted ice cream like this! This exotic 
+                                treat has a unique flavor profile thanks to saffron, 
+                                rose water, and pistachios. But what really sets it apart is the addition of 
+                                creamy evaporated milk that gives this frozen dessert a rich and luxurious texture.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>60%</td>
+                            <td>20%</td>
+                            <td>70%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="sheer yakh-1" name="sheer yakh" value="5">
+                            <label for="sheer yakh-1">☆</label>
+                            
+                            <input type="radio" id="sheer yakh-2" name="sheer yakh" value="4">
+                            <label for="sheer yakh-2">☆</label>
+                        
+                            <input type="radio" id="sheer yakh-3" name="sheer yakh" value="3">
+                            <label for="sheer yakh-3">☆</label>
+                        
+                            <input type="radio" id="sheer yakh-4" name="rating" value="2">
+                            <label for="sheer yakh-4">☆</label>
+                        
+                            <input type="radio" id="sheer yakh-5" name="sheer yakh" value="1">
+                            <label for="sheer yakh-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                    <li>
+                        <h2 id="gosh-e fil">Gosh-e Fil</h2>
+                        <img src="images/goshefil.jpg" alt="goshe fil image" style="width: 290px; height: 200px;">
+                            <p>If you're in the market for something sweet, delicious, and a bit exotic, 
+                                I've got just the thing: "Afghani Gosh-e Fil"! These quirky treats are 
+                                also known as elephant ears and you just might see why in the photo! 
+                                This traditional dessert from Afghanistan consists of light, 
+                                flaky pastry shells filled with a sweet and creamy mixture of milk, sugar, and cardamom. 
+                                The result is a mouth-watering treat that is both decadent and delicate.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>70%</td>
+                            <td>40%</td>
+                            <td>40%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="gosh-e fil-1" name="gosh-e fil" value="5">
+                            <label for="gosh-e fil-1">☆</label>
+                            
+                            <input type="radio" id="gosh-e fil-2" name="gosh-e fil" value="4">
+                            <label for="gosh-e fil-2">☆</label>
+                        
+                            <input type="radio" id="gosh-e fil-3" name="gosh-e fil" value="3">
+                            <label for="gosh-e fil-3">☆</label>
+                        
+                            <input type="radio" id="gosh-e fil-4" name="gosh-e fil" value="2">
+                            <label for="gosh-e fil-4">☆</label>
+                        
+                            <input type="radio" id="gosh-e fil-5" name="gosh-e fil" value="1">
+                            <label for="gosh-e fil-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                </ul>   
+        </li> 
+
+        <li>
+            <h2 id="drinks">Drinks</h2>
+                <ul>
+                    <li>
+                        <h3 id="dough">Dough</h3>
+                        <img src="images/dough.jpg" alt="dough image" style="width: 300px; height: 240px;">
+                            <p>This is one of the delicious and famous Afghan drinks, which is made 
+                                from a combination of yogurt, salt, ice water and dry mint.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>0%</td>
+                            <td>40%</td>
+                            <td>40%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="dough-1" name="dough" value="5">
+                            <label for="dough-1">☆</label>
+                            
+                            <input type="radio" id="dough-2" name="dough" value="4">
+                            <label for="dough-2">☆</label>
+                        
+                            <input type="radio" id="dough-3" name="dough" value="3">
+                            <label for="dough-3">☆</label>
+                        
+                            <input type="radio" id="dough-4" name="dough" value="2">
+                            <label for="dough-4">☆</label>
+                        
+                            <input type="radio" id="dough-5" name="dough" value="1">
+                            <label for="dough-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                    <li>
+                        <h2 id="sharbat-e-rayhan">Sharbat-E-Rayhan</h2>
+                        <img src="images/sharbat.jpg" alt="sharbat image" style="width: 280px; height: 300px;">
+                            <p>Sharbat-E-Rayhan is a recipe used to make it daily in summer to avoid dehydration.
+                                This is very refreshing beverage in summer.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>0%</td>
+                            <td>20%</td>
+                            <td>60%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="sharbat-e-rayhan-1" name="sharbat-e-rayhan" value="5">
+                            <label for="sharbat-e-rayhan-1">☆</label>
+                            
+                            <input type="radio" id="sharbat-e-rayhan-2" name="sharbat-e-rayhan" value="4">
+                            <label for="sharbat-e-rayhan-2">☆</label>
+                        
+                            <input type="radio" id="sharbat-e-rayhan-3" name="sharbat-e-rayhan" value="3">
+                            <label for="sharbat-e-rayhan-3">☆</label>
+                        
+                            <input type="radio" id="sharbat-e-rayhan-4" name="sharbat-e-rayhan" value="2">
+                            <label for="sharbat-e-rayhan-4">☆</label>
+                        
+                            <input type="radio" id="sharbat-e-rayhan-5" name="sharbat-e-rayhan" value="1">
+                            <label for="sharbat-e-rayhan-5">&nbsp;☆</label>
+                        </div>
+                    </form>
+                    <li>
+                        <h2 id="sharbat-e-bomya">Sharbat-E-Bomya</h2>
+                        <img src="images/sharbatbomya.jpg" alt="sharbate bomya image" style="width: 290px; height: 200px;">
+                            <p>A delicious recipe for lemon shrub with rosewater.
+                            </p>
+                        <a href="recipe-details.html" target="_blank"> 
+                            <input type="button" value="View the full recipe"/>
+                        </a>
+                    </li><br>
+                    <table border="1">
+                        <tr>
+                            <th colspan="3">Nutritional Information</th>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>Salt</td>
+                            <td>Protein</td>
+                        </tr>
+                        <tr>
+                            <td>0%</td>
+                            <td>20%</td>
+                            <td>60%</td>
+                        </tr>
+                    </table><br>
+                    <form action="recipe-list.html" method="post">
+                        <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+                      
+                        <div class="star-rating">
+                            <input type="radio" id="sharbat-e-bomya-1" name="sharbat-e-bomya" value="5">
+                            <label for="sharbat-e-bomya-1">☆</label>
+                            
+                            <input type="radio" id="sharbat-e-bomya-2" name="sharbat-e-bomya" value="4">
+                            <label for="sharbat-e-bomya-2">☆</label>
+                        
+                            <input type="radio" id="sharbat-e-bomya-3" name="sharbat-e-bomya" value="3">
+                            <label for="sharbat-e-bomya-3">☆</label>
+                        
+                            <input type="radio" id="sharbat-e-bomya-4" name="sharbat-e-bomya" value="2">
+                            <label for="sharbat-e-bomya-4">☆</label>
+                        
+                            <input type="radio" id="sharbat-e-bomya-5" name="rating" value="1">
+                            <label for="sharbat-e-bomya-5">&nbsp;☆</label>
+                        </div>
+                    </form><br>
+                    <form action="index.html" method="get">
+                        <input type="submit" value="Submit Rating"/>
+                    </form>
+                </ul>   
+        </li> 
+    </ul> 
+    <br>
+    <h2 id="weekly menu">&nbsp;Weekly Menu</h2>
+    <h3>&nbsp;You can order your recipe based on this manu:</h3>
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Bolani</th>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Ashak</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Ghabeli Polo</th>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Sheer Pira</th>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Sheer Yakh</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Gosh-e Fil</th>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Dough</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Sharbat-E-Rayhan</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Sharbat-E-Bomya</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+</body>
+<footer class="footer">
+    <p>© 2025 Parimah Recipe Book. All rights reserved.</p>
+</footer>
+</html>
