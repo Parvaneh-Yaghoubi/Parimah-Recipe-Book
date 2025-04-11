@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<aside>
+    <!-- strat Navigation Bar -->
+            <nav class="topnav">
+                <a href="index.html">Home</a>
+                <a class="active" href="add-recipe.html">Add Recipe</a>
+                <a href="recipe-list.html">Recipe List</a>
+            </nav>
+    <!-- End Navigation Bar -->
+</aside>
+<body>
+    <h2>&nbsp;Add your own recipe here </h2>
+    <form action="recipe-list.html" method="get">
+        <label for="recipe"><b>&nbsp;Recipe Name *</b></label><br><br>
+        <input type="text" id="recipe" placeholder="Enter Your Recipe Name " required/>
+        <br><br>
+        <label for="ingred"><b>&nbsp;Ingredients *</b></label><br><br>
+        <textarea id="ingred" rows="10" cols="33" placeholder="Enter The Ingredients..." required></textarea>
+        <br><br>
+        <label for="instruc"><b>&nbsp;Cooking Instructions *</b></label><br><br>
+        <textarea id="instruc" rows="10" cols="33" placeholder="Enter The Cooking Instructions..." required></textarea>
+        <br><br>
+        <label for="image"><b>&nbsp;Choose an Image * &nbsp;</b></label>
+        <input type="file" id="image" required/>
+        <br><br>
+        <label for="menu-category"><b>&nbsp;Choose a Category * &nbsp;</b></label>
+        <select name="category" id="menu-category" required>
+            <option value="" disabled selected>Category...</option>
+            <option value="desserts">Desserts</option>
+            <option value="appetizers">Appetizers</option>
+            <option value="cold drinks">Cold Drinks</option>
+            <option value="main dishes">Main Dishes</option>
+            <option value="seafoods">Seafoods</option>
+            <option value="salads">Salads</option>
+        </select><br><br><br>
+        <input type="submit" name="submit" value="Add Recipe"/><br><br>
+    </form>
+</body>
+<footer class="footer">
+    <p>© 2025 Parimah Recipe Book. All rights reserved.</p>
+</footer>
+</html>
