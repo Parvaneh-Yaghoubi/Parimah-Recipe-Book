@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parimah Recipe book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<aside>
+    <!-- strat Navigation Bar -->
+            <nav class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="add-recipe.html">Add Recipe</a>
+                <a href="recipe-list.html">Recipe List</a>
+            </nav>
+    <!-- End Navigation Bar -->
+</aside>
+<header>
+    <!-- Welcom Section -->
+    <section>
+        <h1> &nbsp;Welcome to Parimah Recipe Book</h1>
+        <p><em> &nbsp;Every dish tells a story!! start your flavor journey here.</em></p>
+    </section>
+</header>
+<body>
+    <section>
+        <h1>  &nbsp;Daily Delicious ✨</h1>
+        <h2><strong>&nbsp;Bolani</strong></h2>
+        <p>&nbsp;<img src="images/bolani.jpg" alt="bolani image" style="width: 350px; height: 250px;"></p>
+            <article>
+                Bolani is a traditional Afghan stuffed flatbread, 
+                pan-fried to golden perfection. Filled with savory ingredients like potatoes, 
+                leeks, or lentils, it's crispy on the outside and soft, flavorful on the inside.
+                perfect as a snack, appetizer, or light meal.
+            </article><br>
+        <form action="index.html" method="post">
+            <label for="rating"><b>&nbsp;Rate this recipe:</b></label><br>
+          
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆</label>
+                
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆</label>
+            
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆</label>
+            
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆</label>
+            
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&nbsp;☆</label>
+            </div>
+        </form>
+        <h4>&nbsp;<a href="recipe-list.html" target="_blank"><input type="button" value="Parimah's Full Recipe"/></a></h4>
+        <h2>&nbsp;Featured Categories:</h2>
+        <ul>
+            <li><a href="recipe-list.html#main dishes" target="_blank"><input type="button" value="Main Dishes"/></a></li>
+            <li><a href="recipe-list.html#desserts" target="_blank"><input type="button" value="Desserts"/></a></li>
+            <li><a href="recipe-list.html#drinks" target="_blank"><input type="button" value="Drinks"/></a></li>
+        </ul>
+    </section>
+</body>
+<footer class="footer">
+    <p>© 2025 Parimah Recipe Book. All rights reserved.</p>
+</footer>
+</html>
